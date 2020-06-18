@@ -7,10 +7,14 @@ class Header extends React.Component{
 
 
     render(){
+
+        const divStyle = {
+            backgroundColor: '#A8DADC'
+        }
         return(
-            <div className="ui menu">
+            <div style={divStyle} className="ui menu">
                 <div className="header item">
-                    Quiz App
+                10 Questions Quiz
                 </div>
                 <a className="item">
                     Score: {this.props.counter} / 10

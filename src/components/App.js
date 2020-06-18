@@ -15,6 +15,11 @@ class App extends React.Component{
 
 
     render(){
+        const divStyle = {
+            backgroundColor: '#F1FAEE',
+   
+          };
+          
 
         let display;
   
@@ -28,9 +33,9 @@ class App extends React.Component{
         }
    
             return (
-                <div className="ui container">
+                <div className="ui container" >
                     <Header  />
-                    <div className ="ui segment">
+                    <div style={divStyle} className ="ui segment">
                         {display}
                     </div>
     
