@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import {connect} from 'react-redux';
 import { onSubmitAnswer, updateCounter } from '../actions';
 import {nextQuestion} from '../actions';
+import _ from 'lodash';
 
 
 
@@ -24,7 +25,8 @@ class QuestionBox extends React.Component{
         .replace(/&#039;/g,"'")
         .replace(/&amp; /g,"&");
 
-        this.answers = [...this.props.question.incorrect_answers, this.props.question.correct_answer];
+        this.answers = _.shuffle([...this.props.question.incorrect_answers, this.props.question.correct_answer]);
+        
 
     }
 
