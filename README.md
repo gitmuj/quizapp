@@ -1,3 +1,6 @@
+
+To view a demo of the application go to --> https://gitmuj.github.io/quizapp/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
